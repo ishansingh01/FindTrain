@@ -18,7 +18,7 @@ FROM eclipse-temurin:21-jdk-alpine
 WORKDIR /app
 
 # Copy the built jar file FROM the "build" stage above
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /app/target/Train-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port your app runs on
 EXPOSE 8080
